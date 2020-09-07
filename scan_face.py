@@ -35,9 +35,18 @@ while(True):
     
                 cv2.circle(frame, (x, y), 1, (255, 0, 0), 2)
 
-    cv2.imshow("frame", frame)
+    cv2.imshow("Camera", frame)
 
     if cv2.waitKey(20) & 0xFF  == ord('q'):
         webcam_cap.release()
         cv2.destroyAllWindows()
         break
+    
+
+
+import turtle
+
+n = 60
+pen=turtle.Turtle()
+
+pen.circle(10)
